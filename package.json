@@ -1,0 +1,16 @@
+{
+  "name": "ls-yelp",
+  "version": "1.0.0",
+  "description": "CLI tool for searching Yelp listings",
+  "main": "index.js",
+  "repository": "https://github.com/jogjayr/ls-yelp",
+  "author": "Jayraj Jog <jog@jayraj.net>",
+  "license": "MIT",
+  "dependencies": {
+    "node-yelp-api-v3": "^1.0.1",
+    "npm": "^4.5.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
