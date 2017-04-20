@@ -51,8 +51,11 @@ function hasLocation() {
 if (program.cuisine) {
   const params = { 
     categories: program.cuisine.join(','),
-    location: program.zip 
+    location: program.zip
   };
+  if (program.d) {
+    params.sort_by = 'distance'
+  }
   const spinner = new Spinner('Loading');
   spinner.start();
   yelp.searchBusiness(params).then((result) => {
